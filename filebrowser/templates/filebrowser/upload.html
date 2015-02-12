@@ -143,7 +143,7 @@
                     </div>
                 {% endif %}
             </fieldset>
-            <a href="{% url 'filebrowser:fb_browse' %}"> <-Back </a>
+            <a href="{% url 'filebrowser:fb_browse' %}{% if query.pop %}'?pop={{ query.pop }}'{% endif %}"> <-Back </a>
         </div>
     </form>
 </div>
